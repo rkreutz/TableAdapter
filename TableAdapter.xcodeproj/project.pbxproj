@@ -10,6 +10,9 @@
 		378529BC1F7CAA6900022117 /* TableAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378529B21F7CAA6900022117 /* TableAdapter.framework */; };
 		378529C11F7CAA6900022117 /* TableAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529C01F7CAA6900022117 /* TableAdapterTests.swift */; };
 		378529C31F7CAA6900022117 /* TableAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 378529B51F7CAA6900022117 /* TableAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		378529CD1F7CAC8C00022117 /* TableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529CC1F7CAC8C00022117 /* TableAdapter.swift */; };
+		378529CF1F7CAD4900022117 /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529CE1F7CAD4900022117 /* TableItem.swift */; };
+		378529D11F7CAD5400022117 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529D01F7CAD5400022117 /* TableSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		378529BB1F7CAA6900022117 /* TableAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		378529C01F7CAA6900022117 /* TableAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAdapterTests.swift; sourceTree = "<group>"; };
 		378529C21F7CAA6900022117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378529CC1F7CAC8C00022117 /* TableAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAdapter.swift; sourceTree = "<group>"; };
+		378529CE1F7CAD4900022117 /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
+		378529D01F7CAD5400022117 /* TableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				378529B51F7CAA6900022117 /* TableAdapter.h */,
 				378529B61F7CAA6900022117 /* Info.plist */,
+				378529CC1F7CAC8C00022117 /* TableAdapter.swift */,
+				378529CE1F7CAD4900022117 /* TableItem.swift */,
+				378529D01F7CAD5400022117 /* TableSection.swift */,
 			);
 			path = TableAdapter;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					378529B11F7CAA6900022117 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					378529BA1F7CAA6900022117 = {
@@ -196,6 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378529CD1F7CAC8C00022117 /* TableAdapter.swift in Sources */,
+				378529CF1F7CAD4900022117 /* TableItem.swift in Sources */,
+				378529D11F7CAD5400022117 /* TableSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +347,7 @@
 		378529C71F7CAA6900022117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.rkreutz.TableAdapter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +370,7 @@
 		378529C81F7CAA6900022117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +392,7 @@
 		378529CA1F7CAA6900022117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49K39S52K6;
 				INFOPLIST_FILE = TableAdapterTests/Info.plist;
@@ -390,6 +407,7 @@
 		378529CB1F7CAA6900022117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49K39S52K6;
 				INFOPLIST_FILE = TableAdapterTests/Info.plist;
