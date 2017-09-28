@@ -17,10 +17,6 @@ public protocol TableItem {
 }
 
 public extension TableItem {
-    public var hashValue: Int {
-        return 0
-    }
-    
     var editActions: [UITableViewRowAction]? {
         return nil
     }

@@ -13,10 +13,25 @@
 		378529CD1F7CAC8C00022117 /* TableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529CC1F7CAC8C00022117 /* TableAdapter.swift */; };
 		378529CF1F7CAD4900022117 /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529CE1F7CAD4900022117 /* TableItem.swift */; };
 		378529D11F7CAD5400022117 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529D01F7CAD5400022117 /* TableSection.swift */; };
+		378529D91F7CBB9F00022117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529D81F7CBB9F00022117 /* AppDelegate.swift */; };
+		378529DB1F7CBB9F00022117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529DA1F7CBB9F00022117 /* ViewController.swift */; };
+		378529DE1F7CBB9F00022117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378529DC1F7CBB9F00022117 /* Main.storyboard */; };
+		378529E01F7CBB9F00022117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378529DF1F7CBB9F00022117 /* Assets.xcassets */; };
+		378529E31F7CBB9F00022117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378529E11F7CBB9F00022117 /* LaunchScreen.storyboard */; };
+		378529E91F7CBDFC00022117 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529E81F7CBDFC00022117 /* ColorTableViewCell.swift */; };
+		378529EB1F7CBE7900022117 /* ColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378529EA1F7CBE7900022117 /* ColorItem.swift */; };
+		378529ED1F7CC09200022117 /* TableAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378529B21F7CAA6900022117 /* TableAdapter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		378529BD1F7CAA6900022117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 378529A91F7CAA6900022117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 378529B11F7CAA6900022117;
+			remoteInfo = TableAdapter;
+		};
+		378529EE1F7CC09B00022117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 378529A91F7CAA6900022117 /* Project object */;
 			proxyType = 1;
@@ -35,6 +50,15 @@
 		378529CC1F7CAC8C00022117 /* TableAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAdapter.swift; sourceTree = "<group>"; };
 		378529CE1F7CAD4900022117 /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
 		378529D01F7CAD5400022117 /* TableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		378529D61F7CBB9E00022117 /* TableAdapterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableAdapterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		378529D81F7CBB9F00022117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		378529DA1F7CBB9F00022117 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		378529DD1F7CBB9F00022117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		378529DF1F7CBB9F00022117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		378529E21F7CBB9F00022117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		378529E41F7CBB9F00022117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378529E81F7CBDFC00022117 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		378529EA1F7CBE7900022117 /* ColorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +77,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		378529D31F7CBB9E00022117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378529ED1F7CC09200022117 /* TableAdapter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,7 +93,9 @@
 			children = (
 				378529B41F7CAA6900022117 /* TableAdapter */,
 				378529BF1F7CAA6900022117 /* TableAdapterTests */,
+				378529D71F7CBB9F00022117 /* TableAdapterApp */,
 				378529B31F7CAA6900022117 /* Products */,
+				378529EC1F7CC09200022117 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +104,7 @@
 			children = (
 				378529B21F7CAA6900022117 /* TableAdapter.framework */,
 				378529BB1F7CAA6900022117 /* TableAdapterTests.xctest */,
+				378529D61F7CBB9E00022117 /* TableAdapterApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +128,28 @@
 				378529C21F7CAA6900022117 /* Info.plist */,
 			);
 			path = TableAdapterTests;
+			sourceTree = "<group>";
+		};
+		378529D71F7CBB9F00022117 /* TableAdapterApp */ = {
+			isa = PBXGroup;
+			children = (
+				378529D81F7CBB9F00022117 /* AppDelegate.swift */,
+				378529DA1F7CBB9F00022117 /* ViewController.swift */,
+				378529DC1F7CBB9F00022117 /* Main.storyboard */,
+				378529DF1F7CBB9F00022117 /* Assets.xcassets */,
+				378529E11F7CBB9F00022117 /* LaunchScreen.storyboard */,
+				378529E41F7CBB9F00022117 /* Info.plist */,
+				378529E81F7CBDFC00022117 /* ColorTableViewCell.swift */,
+				378529EA1F7CBE7900022117 /* ColorItem.swift */,
+			);
+			path = TableAdapterApp;
+			sourceTree = "<group>";
+		};
+		378529EC1F7CC09200022117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +202,24 @@
 			productReference = 378529BB1F7CAA6900022117 /* TableAdapterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		378529D51F7CBB9E00022117 /* TableAdapterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378529E51F7CBB9F00022117 /* Build configuration list for PBXNativeTarget "TableAdapterApp" */;
+			buildPhases = (
+				378529D21F7CBB9E00022117 /* Sources */,
+				378529D31F7CBB9E00022117 /* Frameworks */,
+				378529D41F7CBB9E00022117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				378529EF1F7CC09B00022117 /* PBXTargetDependency */,
+			);
+			name = TableAdapterApp;
+			productName = TableAdapterApp;
+			productReference = 378529D61F7CBB9E00022117 /* TableAdapterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,6 +239,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					378529D51F7CBB9E00022117 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 378529AC1F7CAA6900022117 /* Build configuration list for PBXProject "TableAdapter" */;
@@ -172,6 +251,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 378529A81F7CAA6900022117;
 			productRefGroup = 378529B31F7CAA6900022117 /* Products */;
@@ -180,6 +260,7 @@
 			targets = (
 				378529B11F7CAA6900022117 /* TableAdapter */,
 				378529BA1F7CAA6900022117 /* TableAdapterTests */,
+				378529D51F7CBB9E00022117 /* TableAdapterApp */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +277,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378529D41F7CBB9E00022117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378529E31F7CBB9F00022117 /* LaunchScreen.storyboard in Resources */,
+				378529E01F7CBB9F00022117 /* Assets.xcassets in Resources */,
+				378529DE1F7CBB9F00022117 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +311,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		378529D21F7CBB9E00022117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378529EB1F7CBE7900022117 /* ColorItem.swift in Sources */,
+				378529DB1F7CBB9F00022117 /* ViewController.swift in Sources */,
+				378529D91F7CBB9F00022117 /* AppDelegate.swift in Sources */,
+				378529E91F7CBDFC00022117 /* ColorTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,7 +330,31 @@
 			target = 378529B11F7CAA6900022117 /* TableAdapter */;
 			targetProxy = 378529BD1F7CAA6900022117 /* PBXContainerItemProxy */;
 		};
+		378529EF1F7CC09B00022117 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 378529B11F7CAA6900022117 /* TableAdapter */;
+			targetProxy = 378529EE1F7CC09B00022117 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		378529DC1F7CBB9F00022117 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378529DD1F7CBB9F00022117 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		378529E11F7CBB9F00022117 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378529E21F7CBB9F00022117 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		378529C41F7CAA6900022117 /* Debug */ = {
@@ -419,6 +545,36 @@
 			};
 			name = Release;
 		};
+		378529E61F7CBB9F00022117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49K39S52K6;
+				INFOPLIST_FILE = TableAdapterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rkreutz.TableAdapterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		378529E71F7CBB9F00022117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49K39S52K6;
+				INFOPLIST_FILE = TableAdapterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rkreutz.TableAdapterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +601,15 @@
 			buildConfigurations = (
 				378529CA1F7CAA6900022117 /* Debug */,
 				378529CB1F7CAA6900022117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378529E51F7CBB9F00022117 /* Build configuration list for PBXNativeTarget "TableAdapterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378529E61F7CBB9F00022117 /* Debug */,
+				378529E71F7CBB9F00022117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

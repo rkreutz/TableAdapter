@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol TableAdapterDelegate {
-    func didUpdateData(updatedIndexes: [IndexPath], insertedIndexes: [IndexPath], deletedIndexes: [IndexPath])
+    func didUpdateData(updatedIndexes: [IndexPath], insertedIndexes: [IndexPath], deletedIndexes: [IndexPath], insertedSections: IndexSet?, deletedSections: IndexSet?)
     func didSelect(item: TableItem, at indexPath: IndexPath)
 }
 
@@ -52,7 +52,15 @@ open class TableAdapter: NSObject {
                 }
             }
             
-            self.delegate?.didUpdateData(updatedIndexes: updateIndexes, insertedIndexes: insertIndexes, deletedIndexes: deleteIndexes)
+            var deleteSections: IndexSet?
+            var insertSections: IndexSet?
+            if oldValue.count > self.data.count {
+                deleteSections = IndexSet(integersIn: self.data.count..<oldValue.count)
+            } else if oldValue.count < self.data.count {
+                insertSections = IndexSet(integersIn: oldValue.count..<self.data.count)
+            }
+            
+            self.delegate?.didUpdateData(updatedIndexes: updateIndexes, insertedIndexes: insertIndexes, deletedIndexes: deleteIndexes, insertedSections: insertSections, deletedSections: deleteSections)
         }
     }
     
